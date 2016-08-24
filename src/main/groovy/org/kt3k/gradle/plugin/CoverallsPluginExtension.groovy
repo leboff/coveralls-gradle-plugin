@@ -22,6 +22,8 @@ class CoverallsPluginExtension {
 	/** Cobertura report path */
 	Object coberturaReportPath = 'build/reports/cobertura/coverage.xml'
 
+	Object forceCoverReportPath = 'build/reports/forceCover/coverage.json'
+
 	/**
 	 * Additional source directories
 	 */
