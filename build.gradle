@@ -11,7 +11,7 @@ plugins {
 }
 
 group 'org.kt3k.gradle.plugin'
-version '2.6.3'
+version '2.6.3-leboff'
 
 repositories {
     mavenCentral()
@@ -124,6 +124,15 @@ publishing {
         plugin(MavenPublication) {
             from components.java
         }
+    }
+    repositories {
+      maven {
+        credentials{
+          username = "leboff"
+          password = "Y80*BsOtOe3MWzBA"
+        }
+        url "http://artifactory.leboff.co/artifactory/libs-release-local"
+      }
     }
 }
 
